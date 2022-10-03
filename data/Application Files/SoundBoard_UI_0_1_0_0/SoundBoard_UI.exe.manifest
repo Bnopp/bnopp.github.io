@@ -3,28 +3,28 @@
   <asmv1:assemblyIdentity name="SoundBoard_UI.exe" version="0.1.0.0" publicKeyToken="7c02524db9c24d96" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="SoundBoard_UI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="SoundBoard_UI" version="1.0.0.0" publicKeyToken="D6A4270FCA206F49" language="neutral" processorArchitecture="msil" />
     <commandLine file="SoundBoard_UI.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
       <applicationRequestMinimum>
-        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-        <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the
-          requestedExecutionLevel node with one of the following.
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward
-         compatibility then delete the requestedExecutionLevel node.
-    -->
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
@@ -175,13 +175,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SoundBoard_UI.exe" size="54208">
-      <assemblyIdentity name="SoundBoard_UI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="SoundBoard_UI" version="1.0.0.0" publicKeyToken="D6A4270FCA206F49" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+asAEZVGHaNItJ1dgkwpY+6mwgjyd3KN1+O4sFqhfn4=</dsig:DigestValue>
+        <dsig:DigestValue>I4roJzmBkoTeSzCiX8ZnPw1DnRQd3DthYlBtM/Pl1bs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -230,4 +230,21 @@
       <dsig:DigestValue>sEi4QEsEybCcBoaR5N3egRM4kxVAe8kNxk6/24dIM4E=</dsig:DigestValue>
     </hash>
   </file>
-<publisherIdentity name="CN=ETMLNET\pl03jlu" issuerKeyHash="b0357ff010433c350352ae01b02f667c7511d8b0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SroPv5zpBqN2C5vc2gzbFzApmKW5nMY7512UtW3ZbgY=</DigestValue></Reference></SignedInfo><SignatureValue>UB0PXvzmUP5GcpZS3Fi68M13CF3GgtS06Kdsb7hnzt5wXKd8scvFLWCoXFlrVgkTWvKQFzZTQt17FDgsGkECkygJjf0HpqAjjMsD98S4FOFvIFCHbRUIo13mP/JQ3BqBAlqI/xAGsw9WGnOcPRCNG66CtdiAbGP3Ai4glHnQjj8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tjLPk9KXh8LKhsv0LDsj9lTVfjwb0kq/RGJ3GeVyKJ1A3dDqSQtU0L9lFj53k+PVTgQTi+/KUkpHHQfJUBYIuw9AemHpXH/11Q0rZLOvzS34/SZiFTxtSjoQL1tsXtdWFbc4Mxvy6orih47NXN8bQAON3NBRcBDY2AVtZMDQP7E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="066ed96db5945de73bc69cb9a598293017db0cdadc9b0b76a306e99cbf0fba4a" Description="" Url=""><as:assemblyIdentity name="SoundBoard_UI.exe" version="0.1.0.0" publicKeyToken="7c02524db9c24d96" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ETMLNET\pl03jlu</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iZBRO6iXbfTQ2CnTcl2ZkihY3pnGuTxaB38VZb4CeNA=</DigestValue></Reference></SignedInfo><SignatureValue>eP5D+VKMD2ZzeOBEnaxlohO2im7MRmc+OOyHYnWFOYcrnygEI53y5bkVOQQ9iUNhyIbdUBhXrmA1NalXw+jpKAIBTv6Cq57d8xDslKBzp19NX7DSlUSc3wrp0fMXMyHw2vWE86rHEy98Aqjtw2LgpnooHGrM1gI1/jPBSXmlS8I=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tjLPk9KXh8LKhsv0LDsj9lTVfjwb0kq/RGJ3GeVyKJ1A3dDqSQtU0L9lFj53k+PVTgQTi+/KUkpHHQfJUBYIuw9AemHpXH/11Q0rZLOvzS34/SZiFTxtSjoQL1tsXtdWFbc4Mxvy6orih47NXN8bQAON3NBRcBDY2AVtZMDQP7E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQSdpz01HBLbNIa+SjY8J/FTANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ARQBUAE0ATABOAEUAVABcAHAAbAAwADMAagBsAHUwHhcNMjIxMDAzMDg0ODQ3WhcNMjMxMDAzMTQ0ODQ3WjApMScwJQYDVQQDHh4ARQBUAE0ATABOAEUAVABcAHAAbAAwADMAagBsAHUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALYyz5PSl4fCyobL9Cw7I/ZU1X48G9JKv0RidxnlciidQN3Q6kkLVNC/ZRY+d5Pj1U4EE4vvylJKRx0HyVAWCLsPQHph6Vx/9dUNK2Szr80t+P0mYhU8bUo6EC9bbF7XVhW3ODMb8uqK4oeOzVzfG0ADjdzQUXAQ2NgFbWTA0D+xAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAIF1TNGI7FWYC9Yu1SxF9FEi6p6w0DTReRKR16C04miBM/67sbxQB+pFXrFbs2nUOlkTHjzVMm7w4fw5wM1sDFAmo3ONS6/9Cmy0d9EoIL+ZKvQx3YCseJknay9I2+S+fP7SOPoHgraeOjGga1Bazc6DCuilPL7Z1KavPjh1ZfcE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=ETMLNET\pl03jlu" issuerKeyHash="b0357ff010433c350352ae01b02f667c7511d8b0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>KJlXDpHmHZ5F2JPnyvL1srPgVLUaI5q7O0rHfl2xSXw=</DigestValue></Reference></SignedInfo><SignatureValue>BRvEadmbFnAr9VOs6ZLaF4xACWH7po0up7oIuuiL7n8hMo+ZYd6DbxM62XFokJ0ONbDzz5SFwcUKUKW3nvbJiuYxVKyklIaoQ2XeXbXxe2NIcPrH/Du4qx8PLziIf5EzPry9J/ZYpWtL9B10PcPFnZQYSltTqc0aG/8TvpAzO5s=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tjLPk9KXh8LKhsv0LDsj9lTVfjwb0kq/RGJ3GeVyKJ1A3dDqSQtU0L9lFj53k+PVTgQTi+/KUkpHHQfJUBYIuw9AemHpXH/11Q0rZLOvzS34/SZiFTxtSjoQL1tsXtdWFbc4Mxvy6orih47NXN8bQAON3NBRcBDY2AVtZMDQP7E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7c49b15d7ec74a3bbb9a231ab554e0b3b2f5f2cae793d8459e1de6910e579928" Description="" Url=""><as:assemblyIdentity name="SoundBoard_UI.exe" version="0.1.0.0" publicKeyToken="7c02524db9c24d96" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ETMLNET\pl03jlu</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>6WqTQMGYl6J6aMSTGOdUmrpl5uuV2eRsZdhfxFQbr10=</DigestValue></Reference></SignedInfo><SignatureValue>rQl3XvUC5zlWgeFSXeS332yc1xza1faeCbUo2G+nBv87RSaq7BrxzyqepR73E+dN3+FSLnUXRQ4SKxtxMWH4e/ZsdRVF73Km/jB5mDu2TBjIe0Nv8C/Kolx0kSh7czbxmOHw8UN1EYtxxJ5ndLdIMCZwzBnumwkI3GWTaM4/GjQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tjLPk9KXh8LKhsv0LDsj9lTVfjwb0kq/RGJ3GeVyKJ1A3dDqSQtU0L9lFj53k+PVTgQTi+/KUkpHHQfJUBYIuw9AemHpXH/11Q0rZLOvzS34/SZiFTxtSjoQL1tsXtdWFbc4Mxvy6orih47NXN8bQAON3NBRcBDY2AVtZMDQP7E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQSdpz01HBLbNIa+SjY8J/FTANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ARQBUAE0ATABOAEUAVABcAHAAbAAwADMAagBsAHUwHhcNMjIxMDAzMDg0ODQ3WhcNMjMxMDAzMTQ0ODQ3WjApMScwJQYDVQQDHh4ARQBUAE0ATABOAEUAVABcAHAAbAAwADMAagBsAHUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALYyz5PSl4fCyobL9Cw7I/ZU1X48G9JKv0RidxnlciidQN3Q6kkLVNC/ZRY+d5Pj1U4EE4vvylJKRx0HyVAWCLsPQHph6Vx/9dUNK2Szr80t+P0mYhU8bUo6EC9bbF7XVhW3ODMb8uqK4oeOzVzfG0ADjdzQUXAQ2NgFbWTA0D+xAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAIF1TNGI7FWYC9Yu1SxF9FEi6p6w0DTReRKR16C04miBM/67sbxQB+pFXrFbs2nUOlkTHjzVMm7w4fw5wM1sDFAmo3ONS6/9Cmy0d9EoIL+ZKvQx3YCseJknay9I2+S+fP7SOPoHgraeOjGga1Bazc6DCuilPL7Z1KavPjh1ZfcE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
