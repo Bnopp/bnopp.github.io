@@ -64,7 +64,7 @@ footer p {
     margin: auto 0;
 }
 
-.container h2, h3, ul, p {
+.container h2, h3, ul, p, ul {
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -76,12 +76,12 @@ footer p {
     justify-content: center;
 }
 
-.container h3, p {
+.container h3, p, ul {
     margin: 0px;
 }
 
 .container ul {
-    color: #FFFFFF;
+    width: 80%;
 }
 
 .container a {
