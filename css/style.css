@@ -2,7 +2,9 @@
 
 :root {
     --backgroundColor: #0B0A0C;
-    --gradientAccent: #242324;
+    --secondaryBackgroundColor: #242324;
+    --gradientAccent: linear-gradient(#FF602C, #FF05FF);
+    
 }
 
 html, body {
@@ -14,7 +16,7 @@ html, body {
 header {
     width: 100%;
     height: 80px;
-    background: var(--gradientAccent);
+    background: var(--secondaryBackgroundColor);
     display: flex;
     align-items: center;
 }
@@ -23,6 +25,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -37,8 +40,25 @@ footer p {
     font-size: 14px;
 }
 
-h2 {
+h2{
     color: #FFFFFF;
     margin: 0;
     padding-left: 20px;
 }
+
+
+.container {
+    width: 300px;
+    height: 150px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: double 3px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(lightgray, lightgray), 
+                        var(--gradientAccent);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
