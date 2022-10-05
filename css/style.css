@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
 
 :root {
     --backgroundColor: #0B0A0C;
     --secondaryBackgroundColor: #1A2028;
-    --gradientAccent: linear-gradient(#FF602C, #FF05FF);
+    --gradientAccent: linear-gradient(45deg, #FF602C, #FF05FF);
     
 }
 
@@ -49,8 +49,8 @@ footer p {
 }
 
 .container {
-    width: 300px;
-    height: 375px;
+    width: 350px;
+    height: 550px;
     background-color: #1A2028;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ footer p {
     margin: auto 0;
 }
 
-.container h2, h3, ul, p, ul {
+.container h2, h3, h4, ul, p, ul {
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -76,27 +76,47 @@ footer p {
     justify-content: center;
 }
 
-.container h3, p, ul {
+.container h3, h4, p, ul {
     margin: 0px;
+}
+
+.container img {
+    width: 300px;
+    margin: auto;
+}
+
+.container h4 {
+    font-weight: 400;
 }
 
 .container ul {
     width: 80%;
+    margin: auto;
+    font-weight: 300;
 }
 
 .container a {
     display: flex;
     flex-direction: row;
-    background-color: #2B3FF2;
+    background-image: var(--gradientAccent);
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    margin: auto;
 }
 
 .container a:link {
     text-decoration: none;
 }
 
-.container img {
+.container h3 {
+    font-weight: 500;
+}
+
+.container p {
+    font: 300;
+}
+
+.container #icn {
     width: 60px;
 }
