@@ -149,3 +149,7 @@ p {
 .container #icn {
     width: 60px;
 }
+
+.container #message {
+    margin: auto;
+}
