@@ -4,7 +4,6 @@
     --backgroundColor: #FFFFFF;
     --mainTextColor: #0F1318;
     --gradientAccent: linear-gradient(45deg, #FF602C, #FF05FF);
-    
 }
 
 html, body {
@@ -33,6 +32,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    overflow: hidden;
 }
 
 footer {
@@ -71,16 +71,98 @@ p {
 }
 
 .container_left {
-    width: 25%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid transparent;
+}
+
+.container_left h1 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.container_left p {
+    margin: 15px 5px 5px 25px;
+    font-weight: 100;
+    font-size: 18px;
+    align-self: center;
+}
+
+.container_left h1, h3 {
+    margin: 5px;
+}
+
+.container_left .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_left .author {
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container_left .author h3 {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.container_left .author hr {
+    width: 50px;
+    height: 1px;
+    border: 0;
+    margin-right: 10px;
+    background-color: var(--mainTextColor);
+}
+
+.container_left .button_container a {
+    display: flex;
+    flex-direction: row;
+    background-image: var(--gradientAccent);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.button_container {
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+.download {
+    align-self: center;
+}
+
+.button_container p {
+    color: #FFFFFF;
+    margin: 0 0 0 5px;
+}
+
+.button_container h3 {
+    color: #FFFFFF;
+}
+
+.button_container img {
+    width: 70px;
 }
 
 .container_right {
-    width: 75%;
+    width: 55%;
 }
 
-.container_right .circles span {
-    height: 300px;
-    width: 300px;
+.container_right .circles div {
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     display: inline-block;
     filter: blur(150px);
@@ -90,18 +172,22 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    rotate: 0;
+}
+
+.container_right .bottom_row {
     rotate: 30deg;
 }
 
 .container_right #circle_top {
-    background-color: #FF602C;
+    background-color: #FF602C90;
 }
 
 .container_right #circle_left {
-    background-color: #FF05FF;
+    background-color: #FF05FF90;
 }
 
 .container_right #circle_right {
-    background-color: #531CB3;
+    background-color: #531CB390;
 }
