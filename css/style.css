@@ -33,7 +33,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 footer {
@@ -164,12 +164,11 @@ p {
 .container_right img {
     width: 700px;
     position: absolute;
-    z-index: 2;
-    top: 25%;
-    right: 5%;
-    perspective: 5000px;
+    z-index: 1;
+    top: 30%;
+    right: 15%;
     transform: rotate3d(1, -1, 1, 15deg);
-    filter: drop-shadow(40px 40px 20px #7f7f7f);
+    filter: drop-shadow(40px 40px 20px #7f7f7f80);
 }
 
 .container_right .circles div {
