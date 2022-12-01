@@ -159,15 +159,29 @@ p {
 
 .container_right {
     width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_right img {
-    width: 700px;
+    width: 45%;
     position: absolute;
     z-index: 1;
-    top: 30%;
-    right: 15%;
     transform: rotate3d(1, -1, 1, 15deg);
+}
+
+#img-back {
+    width: 45%;
+    position: absolute;
+    z-index: 1;
+    transform: rotate3d(1, -1, 1, 15deg);
+    filter: drop-shadow(40px 40px 20px #7f7f7f80);
+}
+
+span {
+    width: 100px;
+    height: 100px;
     filter: drop-shadow(40px 40px 20px #7f7f7f80);
 }
 
