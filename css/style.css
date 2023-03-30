@@ -56,6 +56,10 @@ p {
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -200,11 +204,6 @@ span {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    rotate: 0;
-}
-
-.container_right .bottom_row {
-    rotate: 30deg;
 }
 
 .container_right #circle_top {

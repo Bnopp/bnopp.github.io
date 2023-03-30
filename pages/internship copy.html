@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Journal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+	<style>body {
+		background-color: #F2F2F2;
+		font-family: Arial, sans-serif;
+	  }
+	  
+	  .container {
+		max-width: 800px;
+		margin: .container {
+max-width: 800px;
+margin: auto;
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+text-align: center;
+color: #FFA500;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+
+th, td {
+padding: 10px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+th {
+background-color: #FFA500;
+color: #fff;
+font-weight: bold;
+}
+
+.day-title {
+background-color: #FFA500;
+color: #fff;
+text-align: center;
+vertical-align: middle;
+}
+
+.task-title {
+font-weight: bold;
+}
+
+.task-time {
+text-align: center;
+}
+
+.day-separator td {
+border: none;
+height: 10px;
+}
+
+.total-title {
+font-weight: bold;
+text-align: right;
+}
+
+.total-time {
+font-weight: bold;
+text-align: center;
+background-color: #FFA500;
+color: #fff;
+}
+.export-button{
+background-color: #FFA500;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+.export-button:hover{
+background-color: #fff;
+color: #FFA500;
+border: 1px solid #FFA500;
+}</style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Work Journal</h1>
+      <table id="work-journal-table">
+        <thead>
+          <tr>
+            <th colspan="3">Week of March 28 - April 3, 2023</th>
+          </tr>
+          <tr>
+            <th>Day</th>
+            <th>Tasks</th>
+            <th>Time (hours)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="day-separator"><td colspan="3"></td></tr>
+          <tr>
+            <td rowspan="6" class="day-title">Monday</td>
+            <td class="task-title">Completed project proposal</td>
+            <td class="task-time">2</td>
+          </tr>
+          <tr>
+            <td class="task-title">Met with client to discuss project scope</td>
+            <td class="task-time">1.5</td>
+          </tr>
+          <tr>
+            <td class="task-title">Reviewed design mockups with team</td>
+            <td class="task-time">1</td>
+          </tr>
+          <tr>
+            <td class="task-title">Developed new feature for project</td>
+            <td class="task-time">2</td>
+          </tr>
+          <tr>
+            <td class="task-title">Reviewed project requirements</td>
+            <td class="task-time">0.5</td>
+          </tr>
+          <tr>
+            <td class="task-title">Met with team to discuss project progress</td>
+            <td class="task-time">1.5</td>
+          </tr>
+          <tr class="day-separator"><td colspan="3"></td></tr>
+          <tr>
+            <td rowspan="7" class="day-title">Tuesday</td>
+            <td class="task-title">Reviewed project requirements</td>
+            <td class="task-time">1</td>
+          </tr>
+          <tr>
+            <td class="task-title">Met with team to discuss project progress</td>
+            <td class="task-time">0.5</td>
+          </tr>
+          <tr>
+            <td class="task-title">Developed new feature for project</td>
+            <td class="task-time">0.5</td>
+          </tr>
+          <tr>
+            <td class="task-title">Reviewed design mockups with team</td>
+            <td class="task-time">1.5</td>
+          </tr>
+          <tr>
+            <td class="task-title">Met with client to discuss project scope</td>
+            <td class="task-time">1</td>
+          </tr>
+          <tr>
+            <td class="task-title">Developed new feature for project</td>
+            <td class="task-time">2.5</td>
+          </tr>
+          <tr>
+            <td class="task-title">Reviewed projectrequirements</td>
+			<td class="task-time">0.5</td>
+		  </tr>
+		  <tr class="day-separator"><td colspan="3"></td></tr>
+		  <tr>
+			<td rowspan="4" class="day-title">Wednesday</td>
+			<td class="task-title">Met with team to discuss project progress</td>
+			<td class="task-time">1</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Reviewed project requirements</td>
+			<td class="task-time">0.5</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Developed new feature for project</td>
+			<td class="task-time">2</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Met with client to discuss project scope</td>
+			<td class="task-time">1</td>
+		  </tr>
+		  <tr class="day-separator"><td colspan="3"></td></tr>
+		  <tr>
+			<td rowspan="5" class="day-title">Thursday</td>
+			<td class="task-title">Reviewed design mockups with team</td>
+			<td class="task-time">1.5</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Met with client to discuss project scope</td>
+			<td class="task-time">1</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Developed new feature for project</td>
+			<td class="task-time">3</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Reviewed project requirements</td>
+			<td class="task-time">0.5</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Met with team to discuss project progress</td>
+			<td class="task-time">0.5</td>
+		  </tr>
+		  <tr class="day-separator"><td colspan="3"></td></tr>
+		  <tr>
+			<td rowspan="4" class="day-title">Friday</td>
+			<td class="task-title">Reviewed project requirements</td>
+			<td class="task-time">1</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Developed new feature for project</td>
+			<td class="task-time">1.5</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Met with client to discuss project scope</td>
+			<td class="task-time">1</td>
+		  </tr>
+		  <tr>
+			<td class="task-title">Met with team to discuss project progress</td>
+			<td class="task-time">1.5</td>
+		  </tr>
+		  <tr class="day-separator"><td colspan="3"></td></tr>
+		  <tr>
+			<td></td>
+			<td class="total-title">Total Hours for Week:</td>
+			<td class="total-time">26.5</td>
+		  </tr>
+		</tbody>
+	  </table>
+	  <button class="export-button">Export to Excel</button>
+	</div>
+</body>
+</html>

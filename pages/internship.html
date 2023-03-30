@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Work Journal</title>
+    <style>
+      .container {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #e67e22;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .week-title th {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff;
+        padding: 10px;
+      }
+
+      thead th {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        color: #fff;
+        background-color: #e67e22;
+        padding: 10px;
+      }
+
+      tbody td {
+        font-size: 14px;
+        text-align: left;
+        color: #333;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+      }
+
+      td.day-title {
+        background-color: #e67e22;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      tr.day-separator td {
+        border-top: none;
+        background-color: #f5f5f5;
+        padding: 0;
+      }
+
+      td.task-title {
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      td.task-time {
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .export-button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #e67e22;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .export-button:hover {
+        background-color: #d35400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Work Journal</h1>
+      <table id="work-journal-table">
+        <thead>
+          <tr>
+            <th>March</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <table>
+                <thead>
+                  <tr class="week-title">
+                    <th colspan="3">April 25 - May 1, 2023</th>
+                  </tr>
+                  <tr>
+                    <th>Date and Day</th>
+                    <th>Tasks</th>
+                    <th>Time (hours)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="day-title">Monday, April 25</td>
+                    <td class="task-title">Reviewed project requirements</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Met with team to discuss project scope</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" class="day-title">Tuesday, April 26</td>
+                    <td class="task-title">Developed new feature for project</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Tested project functionality</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Fixed bugs in project</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="day-title">Wednesday, April 27</td>
+                    <td class="task-title">Met with client to discuss project progress</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Tested project functionality</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" class="day-title">Thursday, April 28</td>
+                    <td class="task-title">Met with team to discuss project progress</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Reviewed project requirements</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Implemented new feature in project</td>
+                    <td>2</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" class="day-title">Friday, April 29</td>
+                    <td class="task-title">Tested new feature in project</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Fixed bugs in project</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Worked on project documentation</td>
+                    <td>2</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="day-title">Saturday, April 30</td>
+                    <td class="task-title">Reviewed project requirements</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Met with team to discuss project progress</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="day-title">Sunday, May 1</td>
+                    <td class="task-title">Reviewed project requirements</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Tested project functionality</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table>
+                <thead>
+                  <tr class="week-title">
+                    <th colspan="3">May 2 - May 8, 2023</th>
+                  </tr>
+                  <tr>
+                    <th>Date and Day</th>
+                    <th>Tasks</th>
+                    <th>Time (hours)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="day-title">Monday, May 2</td>
+                    <td class="task-title">Reviewed project requirements</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Met with team to discuss project scope</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" class="day-title">Tuesday, May 3</td>
+                    <td class="task-title">Developed new feature for project</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Tested project functionality</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Fixed bugs in project</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="day-title">Wednesday, May 4</td>
+                    <td class="task-title">Met with client to discuss project progress</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Tested project functionality</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" class="day-title">Thursday, May 5</td>
+                    <td class="task-title">Met with team to discuss project progress</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Reviewed project requirements</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Implemented new feature in project</td>
+                    <td>2</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" class="day-title">Friday, May 6</td>
+                    <td class="task-title">Tested new feature in project</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Fixed bugs in project</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Worked on project documentation</td>
+                    <td>2</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="day-title">Saturday, May 7</td>
+                    <td class="task-title">Reviewed project requirements</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Met with team to discuss project progress</td>
+                    <td>1</td>
+                  </tr>
+                  <tr class="day-separator">
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2" class="day-title">Sunday, May 8</td>
+                    <td class="task-title">Reviewed project requirements</td>
+                    <td>1.5</td>
+                  </tr>
+                  <tr>
+                    <td class="task-title">Tested project functionality</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
